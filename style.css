@@ -1,0 +1,308 @@
+/* ============================================
+   ОБЩИЕ СТИЛИ
+   ============================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5efe7;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 1.5rem;
+  color: #3b2e25;
+  line-height: 1.5;
+}
+
+/* ============================================
+   ГЛАВНАЯ КАРТОЧКА
+   ============================================ */
+.card {
+  max-width: 480px;
+  width: 100%;
+  background: #fcf8f2;
+  border-radius: 48px 48px 40px 40px;
+  box-shadow: 
+    0 20px 40px -12px rgba(90, 65, 50, 0.25),
+    0 8px 24px -6px rgba(120, 90, 70, 0.08),
+    inset 0 1px 0 rgba(255, 245, 235, 0.6);
+  padding: 2rem 2rem 2.4rem;
+  border: 1px solid rgba(200, 170, 150, 0.25);
+  backdrop-filter: blur(2px);
+}
+
+/* ============================================
+   ФОТО
+   ============================================ */
+.photo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #d9c9b8;
+  box-shadow: 
+    0 12px 28px -8px rgba(100, 75, 55, 0.25),
+    0 0 0 2px #fcf8f2, 
+    0 0 0 5px #dccbbc;
+  transition: transform 0.25s ease, box-shadow 0.3s ease;
+  display: block;
+}
+
+.avatar:hover {
+  transform: scale(1.02);
+  box-shadow: 0 18px 32px -10px rgba(80, 60, 45, 0.3), 0 0 0 2px #fcf8f2, 0 0 0 6px #cbb7a4;
+}
+
+/* ============================================
+   ФИО
+   ============================================ */
+.name-title {
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
+
+.name {
+  font-size: 2.1rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #3b2a1c;
+  margin-bottom: 0.2rem;
+  line-height: 1.2;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.25rem 1rem;
+  border-radius: 40px;
+  letter-spacing: 0.3px;
+  background: rgba(210, 185, 165, 0.25);
+  border: 1px solid rgba(180, 150, 130, 0.2);
+  margin-top: 0.1rem;
+  color: #4d3827;
+}
+
+.badge i {
+  margin-right: 6px;
+}
+
+/* ============================================
+   РАЗДЕЛИТЕЛЬ
+   ============================================ */
+.divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #c6b09b, #b4967c);
+  margin: 1.2rem auto 1.6rem;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+/* ============================================
+   КОНТАКТЫ
+   ============================================ */
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(235, 220, 208, 0.25);
+  padding: 0.7rem 1.2rem;
+  border-radius: 60px;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(190, 165, 145, 0.15);
+  transition: background 0.15s ease, border-color 0.15s;
+  text-decoration: none;
+  color: #3b2e25;
+}
+
+.contact-item:hover {
+  background: rgba(215, 192, 175, 0.25);
+  border-color: rgba(170, 140, 120, 0.3);
+}
+
+.contact-item:active {
+  transform: scale(0.98);
+}
+
+.contact-item i {
+  width: 1.8rem;
+  font-size: 1.3rem;
+  color: #8b6f58;
+  text-align: center;
+  transition: color 0.15s;
+}
+
+.contact-item:hover i {
+  color: #624b39;
+}
+
+.contact-item span {
+  font-size: 1rem;
+  font-weight: 450;
+  letter-spacing: -0.01em;
+  word-break: break-word;
+}
+
+.contact-item .label {
+  font-weight: 400;
+  color: #7a6554;
+  margin-right: 0.25rem;
+  font-size: 0.9rem;
+}
+
+/* ============================================
+   УВЛЕЧЕНИЯ
+   ============================================ */
+.hobbies-section {
+  margin-top: 0.8rem;
+}
+
+.hobbies-title {
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #7f6856;
+  margin-bottom: 1rem;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.hobbies-title i {
+  margin-right: 8px;
+  opacity: 0.6;
+}
+
+.hobbies-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem 1rem;
+  background: rgba(225, 208, 190, 0.1);
+  padding: 1rem 1.2rem;
+  border-radius: 80px;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(190, 165, 145, 0.12);
+}
+
+.hobby-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.95rem;
+  font-weight: 450;
+  color: #4d392b;
+  background: rgba(215, 192, 175, 0.15);
+  padding: 0.3rem 1rem 0.3rem 0.9rem;
+  border-radius: 40px;
+  border: 1px solid rgba(190, 165, 145, 0.08);
+  transition: all 0.15s ease;
+  letter-spacing: -0.01em;
+}
+
+.hobby-tag i {
+  font-size: 0.9rem;
+  color: #8b6f58;
+}
+
+.hobby-tag:hover {
+  background: rgba(200, 175, 155, 0.25);
+  border-color: #cbb29b;
+  transform: translateY(-1px);
+}
+
+/* ============================================
+   ПОДВАЛ
+   ============================================ */
+.footer-note {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: #ab947f;
+  letter-spacing: 0.4px;
+  opacity: 0.6;
+  border-top: 1px solid rgba(190, 165, 145, 0.15);
+  padding-top: 1.2rem;
+}
+
+.footer-note i {
+  margin: 0 3px;
+  font-size: 0.6rem;
+}
+
+/* ============================================
+   АДАПТИВНОСТЬ
+   ============================================ */
+@media (max-width: 460px) {
+  .card {
+    padding: 1.5rem 1.2rem 1.8rem;
+    border-radius: 36px;
+  }
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+  .name {
+    font-size: 1.8rem;
+  }
+  .contact-item {
+    padding: 0.6rem 1rem;
+    gap: 0.7rem;
+  }
+  .contact-item i {
+    font-size: 1.1rem;
+    width: 1.5rem;
+  }
+  .hobbies-grid {
+    border-radius: 40px;
+    padding: 0.8rem 0.8rem;
+    gap: 0.5rem 0.8rem;
+  }
+  .hobby-tag {
+    font-size: 0.85rem;
+    padding: 0.2rem 0.8rem 0.2rem 0.7rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .card {
+    padding: 1rem 0.8rem 1.2rem;
+  }
+  .contact-item span {
+    font-size: 0.85rem;
+  }
+  .hobby-tag {
+    font-size: 0.75rem;
+    padding: 0.15rem 0.6rem;
+  }
+}
+
+/* ============================================
+   ВЫДЕЛЕНИЕ ТЕКСТА
+   ============================================ */
+::selection {
+  background: #dccbbc;
+  color: #2d211a;
+}
