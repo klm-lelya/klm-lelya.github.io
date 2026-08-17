@@ -68,7 +68,7 @@
 <br>
 
 ## 🪴 Практика и стажировка
-[<img src="/internship_auto.png" width="280px" hspace="10px" alt="Сертификат об окончании стажировки»">](https://raw.githubusercontent.com/klm-lelya/klm-lelya.github.io/refs/heads/main/certificate.png)
+[<img src="/certificate.png" width="280px" hspace="10px" alt="Сертификат об окончании стажировки»">](https://raw.githubusercontent.com/klm-lelya/klm-lelya.github.io/refs/heads/main/certificate.png)
 
 
 <br>
