@@ -75,13 +75,10 @@
 <br>
 
 ## 🎒 Образование
-[<img src="/diplom.png" width="280px" hspace="10px" alt="Диплом»">](https://raw.githubusercontent.com/MaxEvdokimov1/MaxEvdokimov1/main/diplom.png)
-[<img src="/recommendation.png" width="280px" hspace="10px" alt="Рекомендательное письмо»">](https://raw.githubusercontent.com/MaxEvdokimov1/MaxEvdokimov1/main/recommendation.png)
+[<img src="Сертификат о прохождении стажировки" width="280px" hspace="10px" alt="Сертификат о прохождении стажировки">](file:///C:/Users/1/Desktop/Сертификат.png)
 
-<br>
-<br>
+## 🤝 Контакты
+- 📧 Email: klm.lelya@yandex.ru
+- 💬 Telegram: @klm_lelya
 
-## 🤝 Контакт
-[![Email](https://img.shields.io/badge/Email-3b5998?style=flat-square&logo=Mail.Ru&logoColor=white)](mailto:metrika8@testcloud.ru)
-[![Telegram Badge](https://img.shields.io/badge/-Telegram-0088cc?style=flat-square&logo=Telegram&logoColor=white)](https://t.me/evdokimovmax)
 
